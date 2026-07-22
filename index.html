@@ -61,24 +61,25 @@ nav a:hover{
 
 .hero p{
     margin-top:20px;
-    font-size:20px;
+    font-size:22px;
     color:#ddd;
 }
 
-.hero button{
+.hero a{
+    display:inline-block;
     margin-top:30px;
     padding:15px 35px;
-    border:none;
     background:#1da1f2;
     color:white;
-    font-size:18px;
+    font-size:20px;
     border-radius:8px;
-    cursor:pointer;
+    text-decoration:none;
     transition:.3s;
 }
 
-.hero button:hover{
+.hero a:hover{
     background:#00bfff;
+    transform:scale(1.1);
 }
 
 section{
@@ -87,7 +88,7 @@ section{
 
 .title{
     text-align:center;
-    font-size:40px;
+    font-size:42px;
     color:#1da1f2;
     margin-bottom:50px;
 }
@@ -113,11 +114,20 @@ section{
 
 .card h3{
     margin-bottom:15px;
+    font-size:22px;
 }
 
 .schedule{
     width:100%;
     border-collapse:collapse;
+}
+
+.schedule caption{
+    caption-side:top;
+    font-size:20px;
+    margin-bottom:10px;
+    color:#00bfff;
+    font-weight:bold;
 }
 
 .schedule th,
@@ -129,6 +139,7 @@ section{
 
 .schedule th{
     background:#1da1f2;
+    color:#000;
 }
 
 footer{
@@ -136,6 +147,15 @@ footer{
     padding:25px;
     background:#101820;
     margin-top:50px;
+    font-size:16px;
+}
+footer a{
+    color:#1da1f2;
+    text-decoration:none;
+    margin:0 8px;
+}
+footer a:hover{
+    text-decoration:underline;
 }
 </style>
 
@@ -146,24 +166,24 @@ footer{
 <header>
 <div class="logo">ROBLOX CUP</div>
 <nav>
-<a href="#">Home</a>
-<a href="#">Teams</a>
-<a href="#">Bracket</a>
-<a href="#">Schedule</a>
-<a href="#">Prizes</a>
+<a href="#home">🏠 Home</a>
+<a href="#teams">👥 Teams</a>
+<a href="#bracket">🏆 Bracket</a>
+<a href="#schedule">📅 Schedule</a>
+<a href="#prizes">💰 Prizes</a>
 </nav>
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 <div>
-<h1>ROBLOX TOURNAMENT PH</h1>
-<p>Join the biggest Roblox esports tournament and prove your strongest in the world.</p>
-<button>Register Now</button>
+<h1>ROBLOX TOURNAMENT PH 🎮🔥</h1>
+<p><strong>Biggest Roblox Esports Event in the Philippines!</strong></p>
+<a href="register.html">🚀 Register Now</a>
 </div>
 </section>
 
-<section>
-<h2 class="title">Tournament Features</h2>
+<section id="features">
+<h2 class="title">Tournament Features ✨</h2>
 <div class="cards">
 <div class="card">
 <h3>🏆 Tournament Bracket</h3>
@@ -184,9 +204,10 @@ footer{
 </div>
 </section>
 
-<section>
+<section id="schedule">
 <h2 class="title">Game Match Schedule</h2>
 <table class="schedule">
+  <caption>📅 Preliminary Matches</caption>
 <tr>
 <th>Date</th>
 <th>Match</th>
@@ -214,10 +235,10 @@ footer{
 </table>
 </section>
 
-<!-- Championship table -->
 <section style="margin-top:50px;">
-<h2 class="title">Championship Match</h2>
+<h2 class="title">Championship Match 🏆</h2>
 <table class="schedule">
+  <caption>🔥 Final Round</caption>
 <tr>
 <th>Date</th>
 <th>Team A</th>
@@ -236,7 +257,11 @@ footer{
 </section>
 
 <footer>
-© 2026 Roblox Championship Tournament by Lazymen_1234
+© 2026 Roblox Championship Tournament by Lazymen_1234 <br>
+🔗 Follow us: 
+<a href="#">🌐 Facebook</a> | 
+<a href="#">🐦 Twitter</a> | 
+<a href="#">🎮 Discord</a>
 </footer>
 
 </body>
